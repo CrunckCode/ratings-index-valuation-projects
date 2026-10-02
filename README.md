@@ -1,0 +1,12 @@
+# Ratings, Index and Valuation Projects
+
+4 Python projects on ratings, index and valuation. Each folder has the code, any output charts or data files, and a README covering what it does, the data, the method, results and honest limitations.
+
+All projects use real public market, rate or filing data wherever possible, built with AI assistance (Claude Code) as a build-and-learn exercise and checked against known results. Each README states what was real, what was synthetic and what the model cannot do.
+
+| Project | What it does |
+|---|---|
+| [Corporate Credit Rating Prediction Model](Corporate_Credit_Rating_Prediction_Model) | A multinomial logistic regression predicting a 5-bucket credit rating class (AAA/AA, A, BBB, BB, B-and-below) from real financial ratios, trained and validated on 25 real companies' real financial data paired with their real, publicly-known approximate S&P credit ratings. |
+| [Custom Fixed Income Index Construction and Rebalancing Engine](Custom_Fixed_Income_Index_Construction_and_Rebalancing_Engine) | A corporate bond index built on the real live Treasury curve and real rating-based credit spread conventions, with eligibility rules (minimum size, maturity, rating floor), market-value weighting, and a 24-month monthly rebalancing simulation that forces genuine index-provider-style events (maturity, call, downgrade-driven exit, offsetting new issuance), tracked with full turnover attribution and total-return summary. |
+| [Illiquid Asset / Private Credit Valuation Model (Mark-to-Model)](Illiquid_Asset_Private_Credit_Valuation_Model) | A mark-to-model valuation of an illiquid middle-market private term loan using a comparable-yield approach benchmarked against real observable public credit spreads (adjusted for illiquidity, size, and covenant-quality differences), cross-checked with a discounted-cash-flow approach, producing a defensible fair-value range with discount-rate sensitivity - the actual deliverable a third-party valuation analyst produces. |
+| [Sovereign Credit Rating Replication Model](Sovereign_Credit_Rating_Replication_Model) | Trains a multi-bucket rating classifier from real World Bank macro indicators for a 32-country universe, paired with each country's real, publicly-known approximate sovereign rating, using the identical bucketing/validation methodology as the corporate rating project - with a discussion of the largest real prediction misses and a genuine, counterintuitive coefficient-sign finding. |
